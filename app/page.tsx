@@ -1,13 +1,16 @@
 export default function Home() {
   return (
     <main>
-      <a href="/menu">Menu</a>
-      <a href="/events">Events</a>
-      <a href="/order">Order</a>
-      <a href="/about">About</a>
-
-      <h1>Welcome to the Cozy Cafe </h1>
-      <p>A warm and friendly place for a snack and a drink.</p>
+      <h1 style={{ textAlign: "center" }}>Welcome to the Cozy Cafe </h1>
+      <p style={{ textAlign: "center" }}>
+        A warm and friendly place for a snack and a drink.
+      </p>
+      <img
+        src="/images/hero.png"
+        height="375px"
+        width="500px"
+        style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
+      />
     </main>
   );
 }

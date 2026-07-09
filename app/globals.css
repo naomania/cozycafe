@@ -1,4 +1,16 @@
 body {
+  background-color: #f9e0e2;
   font-family: Arial, Helvetica, sans-serif;
   margin: 2rem;
 }
+
+/* --petal-frost: #f0d7df;
+--soft-blush: #f9e0e2; This is our background color currently.
+--lavender-blush: #f8eaec;
+--soft-blush-2: #f7ddd9;
+--powder-petal: #f7e6da;
+--soft-linen: #e3e9dd;
+--light-blue: #c4dbd9;
+--azure-mist: #d4e5e3;
+--pale-sky: #cae0e4;
+--pale-slate: #c8c7d6; */
