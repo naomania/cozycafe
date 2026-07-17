@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Cozy Cafe",
-  description: "A cozy little pretend cafe.",
+  title: "Cozi Cafe",
+  description: "A cozy little cafe.",
 };
 
 export default function RootLayout({
@@ -15,25 +14,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <>
-        <>Cozi Cafe</>
-        <br />
-        <>
-          <Link href="/" style={{ paddingRight: "5px" }}>
-            Home
-          </Link>
-          <Link href="/menu" style={{ paddingRight: "5px" }}>
-            Menu
-          </Link>
-          <Link href="/events" style={{ paddingRight: "5px" }}>
-            Events
-          </Link>
-          <Link href="/order" style={{ paddingRight: "5px" }}>
-            Order
-          </Link>
-          <Link href="/about">About</Link>
-        </>
-      </>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Pacifico&family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

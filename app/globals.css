@@ -1,16 +1,62 @@
 body {
-  background-color: #f9e0e2;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 2rem;
+  margin: 0;
+  background: #fbf0ec;
 }
 
-/* --petal-frost: #f0d7df;
---soft-blush: #f9e0e2; This is our background color currently.
---lavender-blush: #f8eaec;
---soft-blush-2: #f7ddd9;
---powder-petal: #f7e6da;
---soft-linen: #e3e9dd;
---light-blue: #c4dbd9;
---azure-mist: #d4e5e3;
---pale-sky: #cae0e4;
---pale-slate: #c8c7d6; */
+a {
+  color: #d76d89;
+}
+a:hover {
+  color: #b95672;
+}
+
+@keyframes coziPop {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes coziFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes coziFall {
+  from {
+    transform: translateY(-60px) rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(105vh) rotate(340deg);
+    opacity: 0.6;
+  }
+}
+@keyframes coziWiggle {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #f0d7df;
+  border-radius: 99px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
